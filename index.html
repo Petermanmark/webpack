@@ -7,8 +7,47 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
-    <p>This is a template</p>    
+<body id="body">
+    <p>This is a template</p>
+    <label>A kép URL-je:</label>
+    <input type="url" id="url"></br></input>
+
+    <label>A kép szélessége:</label>   
+    <input type="number" id="kepszelte"></br></input>
+
+    <label>A kép keret vastagsága:</label>    
+    <input type="number" id="kepvastag"></br></input>
+
+    <label>A kép keret színe:</label>    
+    <input type="color" id="kepszin"></br></input>
+
+    <img src="" id="kephelye">
+
+    <footer>Peterman Márk 2/14S</footer>
+    <button onclick="Myfunction()">dark mode</button>
+
     <script src='main.js'></script>
 </body>
 </html>
+
+<!-- Készíts egy "Digitális Képkeret" készítő alkalmazást!
+A kiindulási keretalkalmazás:
+https://github.com/hgabor/webpack-keret
+
+Az alkalmazás 4 bemeneti mezővel rendelkezzen:
+
+    A kép URL-je
+    A kép szélessége (pixelben megadva)
+    A képkeret vastagsága
+    A képkeret színe
+
+A négy adat segítségével helyezz el egy képet az oldalon, amely a megadott tulajdonságokkal rendelkezik (az <img> tag szerepelhet a HTML-ben). Ha bármely adatot módosítjuk, az legyen hatással a képre is. URL esetében a gépelés befejeztével, a többinél azonnal történjen meg a módosítás.
+
+Az oldal legyen reszponzív:
+
+    Medium (md) méret felett a bementi mezők és a címkék egymás mellett, táblázatszerűen jelenjenek meg
+    Ennél kisebb képernyőméreten egymás alatt
+
+Az oldal láblécében szerepeljen a neved, osztályod, valamint egy gomb, amivel sötét/világos mód között lehet váltani. A sötét módot úgy valósítsd meg, hogy a <body> tagre egy "dark-mode" class-t alkalmazz, és ennek megfelelően készítsd el a CSS szabályokat.
+
+Minta kép, amit a teszteléshez lehet használni: https://i.imgur.com/O89vfci.jpeg - mentsd le a projektedhez, és lokális (127.0.0.1-es) URL-ként használd. -->
